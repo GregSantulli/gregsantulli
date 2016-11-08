@@ -5,9 +5,9 @@
 $theme-danger:     #e74c3c;
 
 $gray-base:			#13244A !default;
-$gray-darker:		lighten($gray-base, 1.5%) !default; // #222
-$gray-dark:			lighten($gray-base, 20%) !default;   // #333
+$gray-darker:		lighten($gray-base, 5.5%) !default; // #222
+$gray-dark:			lighten($gray-base, 5.5%) !default;   // #333
 $gray:				lighten($gray-base, 33.5%) !default; // #555
 $gray-light:		lighten($gray-base, 46.7%) !default; // #777
 $theme-primary:		#98C4FF !default; // #eee
-$gray-lighter:		$theme-primary !default; // #eee
+$gray-lighter:		lighten($gray-base, 75%) !default; // #777

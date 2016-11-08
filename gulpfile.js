@@ -79,7 +79,16 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy'], function(){
+  connect.server({
+    root: ['.'],
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
+
+gulp.task('serveprod', function() {
+});
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {

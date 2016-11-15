@@ -270,11 +270,15 @@ section {
 
 // Portfolio Section
 
+$portfolio-radius: 25px;
+
 #portfolio {
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
         .portfolio-link {
+            border-radius: $portfolio-radius $portfolio-radius 0 0;
+            overflow: hidden;
             display: block;
             position: relative;
             max-width: 400px;
@@ -311,6 +315,7 @@ section {
             }            
         }
         .portfolio-caption {
+            border-radius: 0 0 $portfolio-radius $portfolio-radius;
             max-width: 400px;
             margin: 0 auto;
             background-color: white;
@@ -538,7 +543,6 @@ section {
     img {
         width: 250px;
         height: 250px;
-        margin: 0 auto;
         border: 7px solid white;
     }
     h4 {
